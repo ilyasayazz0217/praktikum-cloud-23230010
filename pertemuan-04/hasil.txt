@@ -1,0 +1,15 @@
+root@ubuntu:~$ history > /root/riwayat.txt
+root@ubuntu:~$ docker ps -a
+CONTAINER ID   IMAGE          COMMAND                  CREATED              STATUS                      PORTS                                     NAMES
+0747218bb35a   nginx:1.26     "/docker-entrypoint.…"   About a minute ago   Up About a minute           0.0.0.0:8082->80/tcp, [::]:8082->80/tcp   web-lama
+bba88de469a1   nginx:alpine   "/docker-entrypoint.…"   2 minutes ago        Up 2 minutes                0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   web-alpine
+7e0edbb4e5f4   nginx          "/docker-entrypoint.…"   3 minutes ago        Up 3 minutes                0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   web
+50a2dd0c9743   hello-world    "/hello"                 26 minutes ago       Exited (0) 26 minutes ago                                             crazy_varahamihira
+root@ubuntu:~$ docker images
+                                                                                                                             i Info →   U  In Use
+IMAGE                ID             DISK USAGE   CONTENT SIZE   EXTRA
+alpine:latest        3ea06e4cb95e       8.43MB             0B        
+hello-world:latest   e2ac70e7319a       10.1kB             0B    U   
+nginx:1.26           64e5ac93d424        192MB             0B    U   
+nginx:alpine         7cac34a4d72b         63MB             0B    U   
+nginx:latest         c05939e13a61        163MB             0B    U 
